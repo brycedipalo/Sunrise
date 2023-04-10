@@ -311,16 +311,20 @@ section#services h1 {
 }
 
 section#projects {
-  background-color: var(--navColor4); 
+  background-color: var(--navColor4);  
 }
 
-i.fa-brands{
-  justify-content: space-around;
-}
+/* .social-icons{ */
+  /* display:flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+
+/* } */
 
 .fa-brands {
-  font-size: 100px;
-  margin-right: 50px;
+  font-size: 75px;
+  margin: 50px;
   cursor: pointer;
   color: #000;
 }
