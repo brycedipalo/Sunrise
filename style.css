@@ -13,6 +13,7 @@
   --navColor4: #597769;
   --navColor5: #3E6151;
   */
+
 /* 
 --navColor1: #a4acb9;
 --navColor2: #97A4B8;
@@ -21,7 +22,7 @@
 --navColor5: #2E4466;
 */
 
-  
+
   --navColor1: #FFFDE6;
   --navColor2: #FFFBD3;
   --navColor3: #FFF9C0; 
@@ -304,7 +305,11 @@ section#about h1 {
 }
 
 section#services {
+  background-image: url("./chair2.png");
   background-color: var(--navColor3);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left center;
   justify-content: space-around;
   align-items: center;
   list-style-type: circle;
@@ -426,4 +431,14 @@ button:focus{
     top: 0.5rem;
     right: 1rem;
   }
+
+  section#services {
+    background-image: none;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: circle;
+    flex-direction: column;
+    text-align: center;
+  }
+
 }
