@@ -305,10 +305,10 @@ section#about h1 {
 }
 
 section#services {
+  background-size: 50%;
   background-image: url("./chair2.png");
   background-color: var(--navColor3);
   background-repeat: no-repeat;
-  background-size: 50%;
   background-position: left center;
   justify-content: space-around;
   align-items: center;
@@ -422,9 +422,15 @@ button:focus{
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
+  
+  section#home{
+    background-size: 100%;
+
+  }
+  
   section#home a {
     top: 1rem;
-    left: 1rem;
+    left: 1rem;   
   }
 
   .menu-bars {
