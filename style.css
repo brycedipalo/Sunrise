@@ -53,7 +53,6 @@ h2 {
 p {
   text-align: center;    
   font-size: 1.25rem; 
-
 }
 
 /* --- Navigation Menu ------------------------------ */
@@ -340,15 +339,38 @@ section#projects {
   color: #000;
 }
 
-.fa-brands:hover {
+.fa-regular, .fa-solid {
+  font-size: 50px;
+  margin: 10px;
+  cursor: pointer;
+  color: #000;
+
+}
+
+.fa-brands:hover, .fa-regular:hover, .fa-solid:hover {
   color: rgba(66,66,66,0.7);
 }
 
-
 section#contact {
   background-color: var(--navColor5);
-  height: 750px;
+  /* height: 750px; */
+}
 
+section#contact a{
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+section#contact a:hover {
+  color: rgba(66,66,66,0.7);
+
+}
+
+.Ccontainer{
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 input {
@@ -364,7 +386,7 @@ input {
 
 
 .container{
-  width: 480px;
+  width: 450px;
   height: 100%;
   background: white;
   display: flex;
@@ -372,6 +394,7 @@ input {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.4);
+  
 }
 
 .message-container{
