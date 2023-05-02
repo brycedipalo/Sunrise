@@ -47,12 +47,14 @@ h1 {
 }
 
 h2 {
-  padding-bottom: 60px;
+  padding-bottom: .75rem;
 }
 
 p {
   text-align: center;    
   font-size: 1.25rem; 
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* --- Navigation Menu ------------------------------ */
@@ -276,7 +278,7 @@ section#home {
   align-items: flex-end;  
 }
 
-a#email {
+#email {
   position: absolute;
   z-index: 2;
   top: 1.5rem;
@@ -304,16 +306,31 @@ section#about h1 {
 }
 
 section#services {
-  background-size: 50%;
-  background-image: url("./chair2.png");
   background-color: var(--navColor3);
+  
+}
+
+section#services .wrap {
+  height:100%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 192, 0.7), 
+    rgba(255, 249, 192, 0.7)), 
+    url('chair2.png');
+ 
+  background-size: 50%;
   background-repeat: no-repeat;
   background-position: left center;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  list-style-type: circle;
-  flex-direction: column;
   text-align: center;
+  /* z-index: 90; */
+}
+
+section#services .wrap .content {
+  /* opacity: 2;
+  z-index: 2; */
 }
 
 section#services h1 {
@@ -321,16 +338,32 @@ section#services h1 {
 }
 
 section#projects {
+  /* z-index:a 100; */
   background-color: var(--navColor4);  
+  flex-direction: column;
 }
 
-/* .social-icons{ */
-  /* display:flex; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
-  /* flex-direction: column; */
 
-/* } */
+
+.roll {   
+  /* width: 85%;
+  height: 75%; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.roll img {
+max-width: 30%; 
+margin: 10px;
+border-radius: 0.5rem;
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+}
+
+.social {
+  height: 25%;
+}
 
 .fa-brands {
   font-size: 75px;
@@ -461,13 +494,26 @@ button:focus{
     right: 1rem;
   }
 
-  section#services {
+  section#services .wrap {
     background-image: none;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: circle;
+
+  }
+
+  
+  .roll {   
+    /* width: 85%;
+    height: 75%; */
+    display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    /* justify-content: space-around; */
+  }
+
+  .roll img {
+  max-width: 40%; 
+  margin: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
   }
 
 }
