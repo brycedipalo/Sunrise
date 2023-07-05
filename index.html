@@ -148,9 +148,11 @@ media id: 17872690217866996
     
     <div class="container">
         <div class="contactheader">
+          <!--           
             <h3>For any inqueries E-mail </h3>
             <h3>sunrise.penticton@gmail.com</h3>
-            <p>Or use this form to get a free quote</p>
+          -->
+            <p>use this form to get a free quote</p>
         </div>
         <form id="form" action="https://formsubmit.co/8451044cd0f1200bdd1513845448b82d" method="POST" >
             <div class="form-group">
@@ -159,8 +161,9 @@ media id: 17872690217866996
                 required minlength="3" maxlength="100" name="name">
             </div> 
             <div class="form-group">
+                <!--
                 <div class="form-group-radio">
-                    <label for="contact">Contact Method</label>
+                    *label here*
                     <div class="radio">
                         <input type="radio" id="call" name="contactMethod">
                         <label for="call">Call</label>
@@ -173,8 +176,10 @@ media id: 17872690217866996
                         <input type="radio" id="e-mail" name="contactMethod">
                         <label for="e-mail">E-mail</label>
                     </div>        
-                </div>
-                <input type="text" id="contactinfo" name="contactInfo" placeholder="Contact Information">
+                </div>                  
+                -->
+                <label for="contact">Contact Method</label>
+                <input type="text" id="contactinfo" name="contactInfo" placeholder="email or phone number specify call or text">
             </div>  
             
             <!--   
@@ -195,7 +200,8 @@ media id: 17872690217866996
             </div>
             <div class="form-group">
                 <label for="description">Job Description</label>
-                <input type="text" id="description " placeholder="Description">
+                <textarea id="description " placeholder="Description">
+                </textarea>
             </div>
             <!-- 
                 <div class="form-group">
@@ -205,13 +211,19 @@ media id: 17872690217866996
             -->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+            <br>
+            <br>
             <button type="submit" >Submit</button>
         </form>
-        <div class="message-container">
-            <h3 id="message">Thank you!</h3>
+        <div class="">
+          <BR>
         </div>
+        <!--
+        <div class="message-container">
+          <h3 id="message">Thank you!</h3>
+        </div>
+        -->
     </div>
-
 </section>
 
   <!-- Script -->

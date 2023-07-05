@@ -422,10 +422,23 @@ input {
   transition: all 0.3s;
 }
 
+textarea {
+  width: 100%;
+  height: 68px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  resize: none;
+
+}
+
 
 .container{
-  width: 450px;
-  height: 600px;
+  width: 375px;
+  height: 450px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -479,6 +492,7 @@ label{
   bottom: 3px;
 }
 
+
 button {
   cursor: pointer;
   color: white;
@@ -501,6 +515,7 @@ button:hover {
 button:focus{
   outline: none;
 }
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media (max-width: 600px) {
